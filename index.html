@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img class="logo" src="./images/logo.svg" alt="" />
+
+    <div class="container">
+      <div class="card">
+        <div class="grid">
+          <div class="header">
+            <h4 class="card_heading">Bill</h4>
+
+            <div class="input_group ig1">
+              <img class="dollar" src="./images/icon-dollar.svg" alt="" />
+              <input type="text" class="input bill" />
+            </div>
+
+            <h4 class="card_heading">Select Tip %</h4>
+
+            <div class="tip_grid">
+              <button class="tip tip_cyan tip_5">5%</button>
+              <button class="tip tip_cyan tip_10">10%</button>
+              <button class="tip tip_green tip_15">15%</button>
+              <button class="tip tip_cyan tip_25">25%</button>
+              <button class="tip tip_cyan tip_50">50%</button>
+              <input name="" placeholder="Custom" type="number" class="tip tip_gray tip_custom"></input>
+            </div>
+
+            <span class="number">
+              <h4 class="card_heading">Number of people</h4>
+              <p class="text hidden">Can't be zero</p>
+            </span>
+
+            <div class="input_group n_ig">
+              <img class="dollar" src="./images/icon-person.svg" alt="" />
+              <input onkeydown="emptyText()" type="text" class="input no_of_people" />
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="footer_grid">
+              <span class="payment"
+                ><h4>Tip Amount</h4>
+                <p>/ person</p></span
+              >
+
+              <p class="amount tip_amount">$0</p>
+
+              <span class="payment">
+                <h4>Total</h4>
+                <p>/ person</p>
+              </span>
+
+              <p class="amount total_amount">$0</p>
+            </div>
+            <button class="reset_btn">reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

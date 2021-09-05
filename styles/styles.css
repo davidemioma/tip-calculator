@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono";
+  font-size: 2rem;
+  background: hsl(185, 41%, 84%);
+  display: grid;
+  justify-items: center;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: hsl(186, 14%, 43%);
+}
+
+.logo {
+  margin: 3rem auto 3rem auto;
+}
+
+.container {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  padding: 3rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: 30px;
+}
+
+.card_heading {
+  margin-bottom: 1rem;
+}
+
+.dollar {
+  width: 10px;
+  height: 18px;
+  align-self: center;
+}
+
+.number {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  color: red;
+}
+
+.input_group {
+  width: 100%;
+  background: hsl(189, 41%, 97%);
+  padding: 0.5rem 2rem;
+  display: inline-flex;
+  margin-bottom: 3rem;
+}
+
+.input_group:hover {
+  border: 3px solid hsl(183, 100%, 15%);
+}
+
+.input_group:active {
+  border: 1px solid hsl(183, 100%, 15%);
+}
+
+.n_ig.active {
+  border: 1px solid red;
+}
+
+.input_group .input {
+  background: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 800;
+  padding: 0.5rem 2rem;
+  flex-grow: 1;
+  width: 0;
+  border: 0;
+  outline: 0;
+  text-align: end;
+}
+
+.tip_grid {
+  width: 100%;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 3rem;
+}
+
+.tip {
+  padding: 1.5rem 3rem;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  font-weight: 800;
+}
+
+.tip_custom {
+  text-align: right;
+}
+
+.tip_custom:hover {
+  border: 3px solid hsl(183, 100%, 15%);
+}
+
+.tip_custom:active {
+  border: 1px solid hsl(183, 100%, 15%);
+}
+
+.tip_cyan {
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+
+.tip_cyan:hover {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.tip_green {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.tip_green:hover {
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+
+.tip_gray {
+  background: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+}
+
+.footer {
+  background: hsl(183, 100%, 15%);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+}
+
+.payment h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.payment p {
+  color: hsl(189, 41%, 97%);
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
+.amount {
+  font-size: 3rem;
+  align-self: center;
+  justify-self: end;
+  color: hsl(172, 67%, 45%);
+}
+
+.footer_grid {
+  display: grid;
+  gap: 2rem 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.reset_btn {
+  margin-top: 3rem;
+  background: hsl(172, 67%, 45%);
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  border-radius: 10px;
+  width: 100%;
+  border: 0;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: hsl(183, 100%, 15%);
+  outline: 0;
+}
+
+.reset_btn:hover {
+  opacity: 0.6;
+}
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 70%;
+  }
+
+  .tip_grid {
+    grid-template-columns: repeat(3, 33.3%);
+    margin-bottom: 6rem;
+  }
+
+  .ig1 {
+    margin-bottom: 6rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .footer_grid {
+    gap: 6rem;
+  }
+
+  .reset_btn {
+    margin-top: 19rem;
+  }
+}
